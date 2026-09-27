@@ -50,18 +50,6 @@ This repository provides three things:
 
 ## 2. Background for newcomers
 
-If terms like *ensemble*, *fold* or *out-of-fold* are unfamiliar, read this section first. Everything else assumes it.
-
-### Why an "ensemble"?
-
-A single neural network makes systematic mistakes. If you train several *different* models and average their predictions, their independent errors partially cancel while the shared signal reinforces. This averaging is an **ensemble**, and it is the single most reliable way to gain accuracy in a Kaggle competition.
-
-The crucial word is **different**. Averaging two models that make the *same* mistakes gains nothing. This repository is a practical demonstration of that principle — see [section 9](#9-what-did-not-work-and-why).
-
-### What are "weights"?
-
-A neural network is a large collection of numbers (millions of them) called weights or parameters. *Training* is the process of adjusting those numbers so the network's outputs match the training labels. A `.pt` file is a saved snapshot of those numbers — load it and the network behaves exactly as it did at the end of training. It is the trained model.
-
 ### "Pretrained" weights and transfer learning
 
 Training from random numbers needs enormous data. Instead we start from weights already trained on a different, larger task, then *fine-tune* on ours. Which pretraining source you start from matters a great deal:
