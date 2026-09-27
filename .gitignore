@@ -1,0 +1,65 @@
+# ---------------------------------------------------------------- secrets
+# kaggle.json holds a live API token. KAGGLE_CONFIG_DIR points at this folder,
+# so the file lives here by necessity -- it must never be committed.
+kaggle.json
+*.pem
+*.key
+.env
+connections.toml
+
+# ---------------------------------------------------------------- kernel outputs
+# Downloaded Kaggle kernel outputs: ~3.5GB of checkpoints and logs that are
+# reproducible from the training kernels and are not source.
+f0out/
+f1out/
+f2out/
+f3out/
+f4out/
+f234out/
+f34out/
+repout/
+bfin/
+bout/
+bp/
+bp2/
+bp3/
+bt/
+btm/
+btm2/
+bfull/
+subf/
+tout/
+vout/
+cs0/
+mp/
+meta/
+smoke_out/
+work/
+
+# vendored third-party model mirror (re-downloadable from Kaggle Models)
+dinov2-pytorch-small-v1/
+
+# Trained checkpoints, 981 MB. Distributed as the public Kaggle dataset
+# tejuuss/rsna-knee-arm-ckpts, which is the form the offline submission kernel
+# actually mounts -- a git copy would never be read by the pipeline.
+ckpt_ds/
+
+# ---------------------------------------------------------------- build dirs
+# generated per-push kernel staging directories
+train/_build/
+cache/_build/
+submit/_push/
+out/_coat_env/
+out/_d4_env/
+
+# ---------------------------------------------------------------- python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# ---------------------------------------------------------------- misc
+*.log
+src_check.txt
+submission_status.log

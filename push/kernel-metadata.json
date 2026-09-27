@@ -1,0 +1,41 @@
+{
+  "id": "tejuuss/rsna-knee-dinov2-coatnet-d4-repro",
+  "title": "RSNA Knee DINOv2 + CoAtNet D4 Repro",
+  "code_file": "rsna-knee-dinov2-coatnet-repro.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu",
+    "health"
+  ],
+  "dataset_sources": [
+    "dreaddevelopment/raptor-knee-maxspan",
+    "dreaddevelopment/raptor-knee-native384",
+    "dreaddevelopment/raptor-knee-native384dense",
+    "mattiaangeli/knee-mri-fold-weights",
+    "mattiaangeli/opencv-python-headless-4120088-x86",
+    "marwanmath/resnet-50-radimagenet-marwan",
+    "mattiaangeli/rsna-knee-coat-resgated-ep10-top3",
+    "mattiaangeli/rsna-knee-coatnet-d4-depthzone-swa3-b2",
+    "antoinegg1/rsna-knee-e11-diverse-heads-v20",
+    "antoinegg1/rsna-knee-e9-radimagenet-heads-v15",
+    "pilkwang/rsna-knee-llm-labels",
+    "prvsiyan/rsna-knee-v52-radimagenet-heads-20260812",
+    "pilkwang/rsna-knee-weights"
+  ],
+  "kernel_sources": [
+    "sofiaanjenje/rsna-knee-e11-train",
+    "sofiaanjenje/rsna-knee-e13-train"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [
+    "metaresearch/dinov2/PyTorch/small/1"
+  ],
+  "machine_shape": "NvidiaTeslaT4"
+}
